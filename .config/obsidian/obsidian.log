@@ -1,0 +1,23 @@
+2021-08-03 03:00:31 Loading main app package /usr/lib/obsidian/obsidian.asar
+2021-08-03 03:00:31 Checking for update using Github
+2021-08-03 03:00:31 Success.
+2021-08-03 03:00:31 Latest version is 0.12.10
+2021-08-03 03:00:31 App is up to date.
+2021-08-06 17:49:43 Loading main app package /usr/lib/obsidian/obsidian.asar
+2021-08-06 17:49:43 Checking for update using Github
+2021-08-06 17:49:44 Success.
+2021-08-06 17:49:44 Latest version is 0.12.12
+2021-08-06 17:49:44 Downloading update from https://github.com/obsidianmd/obsidian-releases/releases/download/v0.12.12/obsidian-0.12.12.asar.gz
+2021-08-06 17:49:45 Verifying hash & signature
+2021-08-06 17:49:45 Saving file
+2021-08-06 17:49:46 Update complete.
+2021-08-06 17:51:17 Loading updated app package /home/yu/.config/obsidian/obsidian-0.12.12.asar
+2021-08-06 17:51:17 Checking for update using Github
+2021-08-06 17:51:17 Success.
+2021-08-06 17:51:17 Latest version is 0.12.12
+2021-08-06 17:51:17 App is up to date.
+2021-08-06 17:52:01 Loading updated app package /home/yu/.config/obsidian/obsidian-0.12.12.asar
+2021-08-06 17:52:01 Checking for update using Github
+2021-08-06 17:52:01 Success.
+2021-08-06 17:52:01 Latest version is 0.12.12
+2021-08-06 17:52:01 App is up to date.

@@ -1,0 +1,6 @@
+# GIMP action-history
+
+(history-item "tools-size-decrease" 5)
+(history-item "image-new" 1)
+
+# end of action-history
