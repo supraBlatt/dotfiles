@@ -37,6 +37,9 @@ bindsym $mod+w exec rofi -no-lazy-grab -show window -theme ~/.config/rofi/launch
 # start powermenu
 bindsym $mod+Escape exec ~/.config/rofi/powermenu/powermenu.sh
 
+# for my laptop - toggle synaptics touchpad
+bindsym $mod+T exec touchpad_toggle.sh
+
 # Screenshots
 bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date).png"
 bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date).png"
@@ -152,8 +155,9 @@ xrandr --output eDP1 --auto --output DP-1-4 --auto --above eDP1 && \
 xrandr --output DP-1-4 --primary
 
 exec picom --experimental-backends --backend glx -b
-exec /usr/local/bin/launch_polybar.sh 
-exec --no-startup-id polybar bar1 &
+# no idea why this launches polybar if it only edits $MONITORS
+exec --no-startup-id launch_polybar.sh & 
+#exec --no-startup-id polybar bar1 &
 exec --no-startup-id setxkbmap us,il -option grp:caps_toggle &
 exec xset s off -dpms &
 exec udiskie -Nt &

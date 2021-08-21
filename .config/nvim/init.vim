@@ -149,7 +149,7 @@ autocmd FileType java setlocal omnifunc=javacomplete#Complete
 autocmd FileType java JCEnable
 
 " Blamer
-autocmd BufEnter * EnableBlameLine
+"autocmd BufEnter * EnableBlameLine
 let g:blameLineGitFormat = '%an, %ar - %s'
 
 " .cutter -> .yml
