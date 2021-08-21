@@ -1,9 +1,0 @@
-2021/08/08-13:53:05.810 58e7 Reusing MANIFEST /home/yu/.config/Simplenote/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
-2021/08/08-13:53:05.810 58e7 Recovering log #9
-2021/08/08-13:53:05.811 58e7 Reusing old log /home/yu/.config/Simplenote/IndexedDB/file__0.indexeddb.leveldb/000009.log 
-2021/08/08-15:06:27.459 a363 Compacting 1@1 + 1@2 files
-2021/08/08-15:06:27.474 a363 Generated table #12@1: 37 keys, 15357 bytes
-2021/08/08-15:06:27.474 a363 Compacted 1@1 + 1@2 files => 15357 bytes
-2021/08/08-15:06:27.479 a363 compacted to: files[ 0 0 1 0 0 0 0 ]
-2021/08/08-15:06:27.479 a363 Delete type=2 #8
-2021/08/08-15:06:27.479 a363 Delete type=2 #10

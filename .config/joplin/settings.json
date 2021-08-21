@@ -1,8 +1,0 @@
-{
-	"$schema": "https://joplinapp.org/schema/settings.json",
-	"locale": "en_US",
-	"api.token": "ff50180a10243efbfe95b0d908ece5417f09a82c6d49733c6087b905bf617578be098dfc76719f0dd13d122c98006842447cbfdaafb94269abd8c8788e6ef604",
-	"markdown.plugin.softbreaks": false,
-	"markdown.plugin.typographer": false,
-	"editor": "usr/bin/nvim"
-}

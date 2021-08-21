@@ -1,6 +1,0 @@
-2021/08/14-15:34:22.156 4ae Reusing MANIFEST /home/yu/.config/discord/Local Storage/leveldb/MANIFEST-000001
-2021/08/14-15:34:22.157 4ae Recovering log #259
-2021/08/14-15:34:22.157 4ae Reusing old log /home/yu/.config/discord/Local Storage/leveldb/000259.log 
-2021/08/14-16:07:09.116 2d4f Level-0 table #264: started
-2021/08/14-16:07:09.128 2d4f Level-0 table #264: 25271 bytes OK
-2021/08/14-16:07:09.133 2d4f Delete type=0 #259
