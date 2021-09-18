@@ -1,6 +1,10 @@
 set $mod Mod4
 set $alt Mod1
 
+# app vars 
+set $browser firefox
+set $music spotify
+
 # gaps
 gaps inner 16
 
@@ -24,8 +28,10 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec kitty
 
-# start  browser
-bindsym $mod+b exec firefox
+# start apps 
+bindsym $mod+n exec $browser
+bindsym $mod+m exec $music
+bindsym $mod+Shift+m exec discord
 
 # kill focused window
 bindsym $mod+Shift+c kill
@@ -63,7 +69,7 @@ bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 # split in horizontal orientation
-bindsym $mod+g split h
+bindsym $mod+b split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -127,8 +133,6 @@ bindsym $alt+Shift+Tab move container to workspace back_and_forth
 # open apps in workspaces
 assign [class=(?i)firefox] $ws1
 for_window [class=(?i)firefox] focus
-assign [class=(?i)vivaldi] $ws1
-for_window [class=(?i)vivaldi] focus
 assign [class=(?i)Discord] $ws2 
 for_window [class=(?i)Discord] focus
 
@@ -150,9 +154,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # autostart
-exec xrandr | grep 'DP-1-4 connected' && \
-xrandr --output eDP1 --auto --output DP-1-4 --auto --above eDP1 && \
-xrandr --output DP-1-4 --primary
+exec --no-startup-id handle_monitors.sh
 
 exec picom --experimental-backends --backend glx -b
 # no idea why this launches polybar if it only edits $MONITORS
@@ -163,5 +165,4 @@ exec xset s off -dpms &
 exec udiskie -Nt &
 exec --no-startup-id nm-applet
 exec --no-startup-id dunst &
-exec --no-startup-id feh --bg-fill ~/Downloads/wallpapers/city2.jpg
-
+exec --no-startup-id feh --bg-fill ~/Downloads/wallpapers/city2.jpg 

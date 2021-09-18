@@ -36,7 +36,8 @@ override-redirect = false
 ;-------;
 
 font-0 = JetBrains Mono Nerd Font:Semibold:size=10.5;3
-
+#font-1 = ttf-alef Font:Semibold:size=10.5;3
+font-1 = DejaVu Sans:size=15.5;3
 ;--------;
 ; COLORS ;
 ;--------;
@@ -57,7 +58,7 @@ underline-size = 6.5
 
 modules-left = sep1 i3 sep2 sep1 playerctl sep2
 modules-center = sep1 title sep2
-modules-right = sep1 wired-network wireless-network sep2 sep1 xkeyboard sep2 sep1 volume sep3 battery sep2 sep1 date-time sep2
+modules-right = sep1 wired-network sep3 wireless-network sep2 sep1 xkeyboard sep2 sep1 volume sep3 battery sep2 sep1 date-time sep2
 
 enable-ipc = true
 
@@ -104,8 +105,10 @@ format-muted-overline = ${settings.bg}
 type = internal/network
 interface = enp3s0
 
-label-connected =  Wired  %downspeed%  %upspeed%
-label-disconnected =  Disconnected
+; label-connected =  Wired  %downspeed%  %upspeed%
+label-connected =  Wired
+; label-disconnected =  Disconnected
+label-disconnected = "" 
 
 format-connected-foreground = ${settings.magenta}
 format-connected-background = ${settings.bg2}
@@ -124,7 +127,8 @@ interface = wlp2s0
 label-connected = 直 %essid%
 
 #label-connected = 直 %essid%  %downspeed%  %upspeed%
-label-disconnected = 睊 Disconnected
+#label-disconnected = 睊 Disconnected
+label-disconnected = 睊
 
 format-connected-foreground = ${settings.magenta}
 format-connected-background = ${settings.bg2}
@@ -238,7 +242,7 @@ ws-icon-default = 
 
 [module/title]
 type = internal/xwindow
-
+#label-font = 1
 format-background = ${settings.bg2}
 format-foreground = ${settings.cyan}
 format-underline = ${settings.bg}
@@ -251,7 +255,7 @@ format = <label>
 tail = true
 interval = 1
 #format-padding = 1
-format-prefix = " "
+format-prefix = "  "
 format-background = ${settings.bg2}
 format-foreground = ${settings.green}
 format-underline = ${settings.bg}
@@ -276,7 +280,7 @@ content-overline = ${settings.bg}
 [module/sep3]
 type = custom/text
 content-foreground = ${settings.bg2}
-content-font = 5
-content = "  "
+content-font = 4
+content = "▇"
 content-underline = ${settings.bg}
 content-overline = ${settings.bg}
